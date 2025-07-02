@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Calendar, MapPin, Building2 } from 'lucide-react';
 
 const Experience = () => {

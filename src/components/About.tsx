@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Code2, Database, Globe, Zap, Users, Target, Award, Rocket } from 'lucide-react';
 
 const About = () => {
