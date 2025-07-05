@@ -7,7 +7,7 @@ const Projects = () => {
       title: 'E-Commerce Platform',
       description: 'Full-stack e-commerce solution with React, Node.js, and Stripe integration. Features include real-time inventory, advanced search, and analytics dashboard.',
       image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
-      tags: ['React', 'Node.js', 'PostgreSQL', 'Stripe', 'AWS'],
+      tags: ['React', 'Tailwind Css', 'TypeScript', 'Vite React'],
       github: '#',
       live: '#',
       featured: true
@@ -22,14 +22,15 @@ const Projects = () => {
       featured: true
     },
     {
-      title: 'AI Content Generator',
-      description: 'SaaS platform that leverages AI to generate marketing content, blog posts, and social media captions with custom brand voice.',
-      image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800',
-      tags: ['Next.js', 'OpenAI API', 'Prisma', 'Vercel'],
-      github: '#',
-      live: '#',
-      featured: true
+      title: 'Developer Portfolio',
+      description: 'Custom portfolio website built with modern technologies, featuring animations and optimal performance.',
+      image: 'https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=800',
+      tags: ['React', 'TypeScript', 'Tailwind', 'Framer Motion'],
+      github: 'https://github.com/Sunikumarshah/Portfolio',
+      live: 'https://sunil-shah.vercel.app/',
+      featured: false
     },
+    
     {
       title: 'Weather Dashboard',
       description: 'Beautiful weather application with location-based forecasts, interactive maps, and customizable widgets.',
@@ -40,23 +41,24 @@ const Projects = () => {
       featured: false
     },
     {
-      title: 'Fitness Tracker',
-      description: 'Mobile-first fitness tracking app with workout planning, progress tracking, and social features.',
+      title: 'Home maintenance web app',
+      description: 'Home maintenance web app that helps users track and manage home repairs, maintenance schedules, and service providers.',
       image: 'https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=800',
-      tags: ['React Native', 'Firebase', 'Redux', 'Health API'],
+      tags: ['React js', 'TypeScript', 'Redux', 'Tailwind Css'],
       github: '#',
       live: '#',
       featured: false
     },
     {
-      title: 'Developer Portfolio',
-      description: 'Custom portfolio website built with modern technologies, featuring animations and optimal performance.',
-      image: 'https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=800',
-      tags: ['React', 'TypeScript', 'Tailwind', 'Framer Motion'],
+      title: 'AI Content Generator',
+      description: 'SaaS platform that leverages AI to generate marketing content, blog posts, and social media captions with custom brand voice.',
+      image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800',
+      tags: ['Next.js', 'OpenAI API', 'Prisma', 'Vercel'],
       github: '#',
       live: '#',
-      featured: false
-    }
+      featured: true
+    },
+    
   ];
 
   const featuredProjects = projects.filter(project => project.featured);
