@@ -1,5 +1,5 @@
-
-import { ExternalLink, Github, ArrowRight } from 'lucide-react';
+import GitHubCalendar from "react-github-calendar";
+import { ExternalLink, Github, ArrowRight } from "lucide-react";
 
 const Projects = () => {
   const projects = [
@@ -30,7 +30,6 @@ const Projects = () => {
       live: 'https://sunil-shah.vercel.app/',
       featured: false
     },
-    
     {
       title: 'Weather Dashboard',
       description: 'Beautiful weather application with location-based forecasts, interactive maps, and customizable widgets.',
@@ -57,8 +56,7 @@ const Projects = () => {
       github: '#',
       live: '#',
       featured: true
-    },
-    
+    }
   ];
 
   const featuredProjects = projects.filter(project => project.featured);
@@ -165,7 +163,7 @@ const Projects = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
-                
+
                 <div className="p-6 space-y-4">
                   <h4 className="text-xl font-bold text-white group-hover:text-purple-400 transition-colors duration-300">
                     {project.title}
@@ -173,7 +171,7 @@ const Projects = () => {
                   <p className="text-gray-400 text-sm leading-relaxed">
                     {project.description}
                   </p>
-                  
+
                   <div className="flex flex-wrap gap-2">
                     {project.tags.slice(0, 3).map((tag) => (
                       <span
@@ -184,7 +182,7 @@ const Projects = () => {
                       </span>
                     ))}
                   </div>
-                  
+
                   <div className="flex space-x-3 pt-2">
                     <a
                       href={project.github}
@@ -203,6 +201,20 @@ const Projects = () => {
               </div>
             ))}
           </div>
+        </div>
+
+        {/* ✅ GitHub Contribution Calendar */}
+        <div className="flex flex-col items-center justify-center py-16 mt-20">
+          <h2 className="text-3xl md:text-4xl font-bold text-white pb-6">
+            My self with <span className="text-purple-500">Code</span>
+          </h2>
+          <GitHubCalendar
+            username="Sunikumarshah"
+            blockSize={15}
+            blockMargin={5}
+            fontSize={16}
+            colorScheme="dark"
+          />
         </div>
       </div>
     </section>
